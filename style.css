@@ -251,8 +251,8 @@ p{
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 10px;
     background: #c9c9c9;
-    backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
     background-clip: border-box;
 }
 .about-us_card img{
@@ -312,8 +312,8 @@ p{
     gap: 20px;
     width: 300px;
     background: rgba(192, 192, 192, 0.5);
-    backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
     background-clip: border-box;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 10px;
@@ -397,8 +397,8 @@ p{
     align-items: center;
     width: 300px;
     background: #c0c0c0;
-    backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
     background-clip: border-box;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 10px;
@@ -871,8 +871,12 @@ p{
     .over-flow-control{
         overflow-x: hidden;
         gap: 30px;
-        -webkit-overflow-scrolling: touch;
-        scrollbar-width: none;
+        -webkit-scrollbar {
+            display: none; /* Safari and Chrome */
+        }
+    }
+    .over-flow-control::-webkit-scrollbar {
+        display: none;  /* Safari and Chrome */
         margin-left: 0;
     }
     .about-speech{

@@ -9,7 +9,7 @@
 body{
     display: flex;
     flex-direction: column;
-
+    background-color: rgba(97, 97, 97, 0.5);
 }
 nav{
     display: flex;
@@ -563,23 +563,31 @@ p{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: start;
+    align-items: center;
     width: 80%;
     border-radius: 0 20px 0 20px;
-    padding: 30px 15px;
+    padding: 15px;
     gap: 10px;
     background-color: #b5e4f5;
     font-size: medium;
-    font-weight: 600px;
+    font-weight: 400px;
     color: #000;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
     background-clip: border-box;
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-shadow: 10px #000;
     position: relative;
     bottom: -50px;
 
+}
+.contact-card a:hover{
+    color: #210CC6;
+}
+.contact-position{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: start;
 }
 .contact-details{
     display: flex;
@@ -597,8 +605,8 @@ p{
     align-items: center;
 }
 .contact-us_img img{
-    width: 100%;
-    height: auto;
+    width: 30px;
+    height: 30px;
     animation: zoomInOut 2s infinite;
 }
 @keyframes zoomInOut {
@@ -751,7 +759,7 @@ p{
     left: 5px;
     top: 35%;
     transform: translateY(-50%);
-    color: #888;
+    color: #fff;
     background-color: #184977;
     padding: 6px;
     border-radius: 100%;
@@ -1222,8 +1230,11 @@ p{
         gap: 5px;
         font-weight: 400px;
     }
+    .contact-position{
+        align-items: center;
+    }
     .contact-us_img{
-        border-radius: 0 15px 0 10px;
+        border-radius: 0 15px 0 15px;
     }
     .contact-us_img img{
         width: 25px;

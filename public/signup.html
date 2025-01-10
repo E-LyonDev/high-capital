@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Irish+Grover&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://kit.fontawesome.com/d5a2a27062.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Sign Up</title>
+</head>
+<body>
+    <nav>
+        <ul class="nav-links">
+        <li><a href="index.html#About_us">About Us</a></li>
+        <li><a href="index.html#our_services">Our sevices</a></li>
+        <li><a href="index.html#get_registered">Get Registered</a></li>
+        <li><a href="index.html#Testimonial">Testimonial</a></li>
+        <li><a href="login.html">Log In</a></li>
+        <li><a href="index.html#contact_us">Contact Us</a></li>
+        <li><a href="termsandconditions.html">Terms & conditions</a></li>
+    </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <h3 class="logo">High Capital</h3>
+</nav>
+
+
+<div class="signup-section">
+    <form id="signup-form">
+        <h2>Register Your Account</h2>
+        <div class="input-icon">
+            <i class="fa-solid fa-user"></i>
+            <input type="text" name="full-name" id="full-name" placeholder="Full Name" required writingsuggestions="true">
+        </div>
+        <div class="input-icon">
+            <i class="fa-solid fa-user"></i>
+            <input type="text" name="username" id="username" placeholder="Username" required writingsuggestions="true">
+        </div>
+        <div class="input-icon">
+            <i class="fa-solid fa-key"></i>
+            <input type="password" name="password" id="password" placeholder="Password" required writingsuggestions="true">
+        </div>
+        <div class="input-icon">
+            <i class="fa-solid fa-key"></i>
+            <input type="password" name="confirm-password" id="confirm-password" placeholder="Confirm Password" required writingsuggestions="true">
+        </div>
+        <div class="input-icon">
+            <i class="fa-solid fa-bitcoin-sign"></i>
+            <input type="text" name="bitcoin-wallet" id="bitcoin-wallet" placeholder="Your Bitcoin Wallet Address" required writingsuggestions="true">
+        </div>
+        <div class="input-icon">
+            <i class="fa-solid fa-wallet"></i>
+            <input type="text" name="usdt-wallet" id="usdt-wallet" placeholder="Your Usdt trc20 Wallet Address" required writingsuggestions="true">
+        </div>
+        <div class="input-icon">
+            <i class="fa-brands fa-ethereum"></i>
+            <input type="text" name="ethereum-wallet" id="ethereum-wallet" placeholder="Your Ethereum Wallet Address" required writingsuggestions="true">
+        </div>
+        <div class="input-icon">
+            <i class="fa-solid fa-wallet"></i>
+            <input type="text" name="dogecoin-wallet" id="dogecoin-wallet" placeholder="Your Dogecoin Wallet Address" required writingsuggestions="true">
+        </div>
+        <div class="input-icon">
+            <i class="fa-regular fa-envelope"></i>
+            <input type="text" name="email" id="email" placeholder="Email Address" required writingsuggestions="true">
+        </div>
+        <div class="input-icon">
+            <i class="fa-regular fa-envelope"></i>
+            <input type="text" name="retyped-email" id="retyped-email" placeholder="Retype Email Address" required writingsuggestions="true">
+        </div>
+        <div class="input-icon">
+            <i class="fa-solid fa-question"></i>
+            <input type="text" name="secret-question" id="secret-question" placeholder="Secret Question" required writingsuggestions="true">
+        </div>
+        <div class="input-icon">
+            <i class="fa-regular fa-comment"></i>
+            <input type="text" name="secret-answer" id="secret-answer" placeholder="Secret Answer" required writingsuggestions="true">
+        </div>
+        <div class="input-icon">
+            <i class="fa-solid fa-phone"></i>
+            <input type="text" name="phone-number" id="phone-number" placeholder="Phone Number" required writingsuggestions="true">
+        </div>
+        <div class="terms">
+            <input type="checkbox" id="agree-terms" required>
+            <label for="agree-terms"> I agree with <a href="termsandconditions.html" class="links">Terms and conditions</a></label>
+        </div>
+        <p>Already Registered? <a href="login.html" class="links">Login</a></p>
+        <button type="submit" class="consultation" id="sign-up">REGISTER</button>
+    </form>
+</div>
+    
+
+    <script src="script.js"></script>
+
+</body>
+</html>

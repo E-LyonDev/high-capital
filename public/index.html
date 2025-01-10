@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Irish+Grover&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://kit.fontawesome.com/d5a2a27062.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.socket.io/4.0.0/socket.io.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>High capital</title>
+</head>
+<body>
+    <nav>
+        <ul class="nav-links">
+        <li><a href="#About_us">About Us</a></li>
+        <li><a href="#our_services">Our sevices</a></li>
+        <li><a href="#get_registered">Get Registered</a></li>
+        <li><a href="#Testimonial">Testimonial</a></li>
+        <li><a href="login.html">Log In</a></li>
+        <li><a href="#contact_us">Contact Us</a></li>
+        <li><a href="termsandconditions.html">Terms & conditions</a></li>
+    </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <h3 class="logo">High Capital</h3>
+</nav>
+
+<div class="body_sections">
+    <div class="landing_page" id="landing_page">
+
+        <div class="background-container">
+            <div class="background bg1">
+                <div class="text-content">Empower Your Future with Secure Crypto Investments</div>
+            </div>
+
+            <div class="background bg2">
+                <div class="text-content">Unlock Financial Freedom with Blockchain-Based Solutions</div>
+            </div>
+            
+            <div class="background bg3">
+                <div class="text-content">Invest Smartly, Withdraw Instantly - Your Crypto Journey Starts Here</div>
+            </div>
+        </div>
+        <a class="get-started register" href="signup.html">Get Started</a>
+        <div class="navigation-dots">
+            <span class="dot" onclick="navigateTo(0)"> </span>
+            <span class="dot" onclick="navigateTo(1)"></span>
+            <span class="dot" onclick="navigateTo(2)"></span>
+        </div>
+    </div>
+
+    <div class="About_us" id="About_us">
+        <div class="text-header">
+            <div class="header">About Us</div>
+            <p>
+                Welcome to High Capital, your premier destination for secure and profitable 
+                cryptocurrency investments. Our mission is to empower individuals and businesses to 
+                achieve financial freedom through innovative and reliable digital asset investments.
+            </p>
+         </div>
+             <div class="over-flow-control about-speech">
+                 
+                 <div class="about-us_card">
+                     <div class="icon"><img src="photos/Icons/at-high-capital.svg" alt=""></div>
+                     <div class="text">
+                         <h4>At High Capital</h4>
+                         <p>
+                             We believe in the power of blockchain technology to revolutionize the global 
+                             financial system. Our team of expert traders and analysts is dedicated to 
+                             providing you with the best investment opportunities in the cryptocurrency market.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="about-us_card">
+                        <div class="icon"><img src="photos/Icons/growth icon.svg" alt=""></div>
+                        <div class="text">
+                            <h4>Growth</h4>
+                            <p>
+                                Our financial experts are dedicated to helping you identify the best strategies to grow your
+                                investments. We provide personalized guidance and support to ensure that you make informed
+                                decisions that align with your financial goals. With High Capital, you can confidently navigate
+                                the complexities of the crypto market and achieve sustainable growth.
+                            </p>
+                        </div>
+                    </div>
+                <div class="about-us_card">
+                    <div class="icon"><img src="photos/Icons/High-profit-return.svg" alt=""></div>
+                    <div class="text">
+                        <h4>high Profit Return</h4>
+                        <p>
+                            Profitability is at the core of our investment philosophy. We have meticulously compiled a portfolio of digital
+                            assets that have demonstrated strong performance and potential for high returns. Our goal is to maximize your
+                            profits while minimizing risks, providing you with a reliable and lucrative investment experience.
+                        </p>
+                    </div>
+                </div>
+                <div class="about-us_card">
+                    <div class="icon"><img src="photos/Icons/high-security.svg" alt=""></div>
+                    <div class="text">
+                        <h4>High Security</h4>
+                        <p>
+                            Security is our top priority at High Capital. We utilize advanced blockchain technology and secure offline storage systems
+                            to protect your assets from potential threats. Our platform is built with robust security measures to ensure that your
+                            investments are safe and your personal information is protected.
+                        </p>
+                    </div>
+                </div>
+                <i class="fa-solid fa-angle-left fa-2xl scroll-arrow" id="scroll-left"></i>
+                <i class="fa-solid fa-angle-right fa-2xl scroll-arrow" id="scroll-right"></i>
+        </div>
+        <p>
+            Join us at High Capital and take the first step towards a brighter financial future. Together, we can unlock the full potential of
+             your investments and achieve your financial goals.
+        </p>
+        <a class="register" href="signup.html">Get Started</a>
+    </div>
+
+    <div class="our_services" id="our_services">
+        <div class="text-header">
+            <div class="header">Features</div>
+            <p>
+                Allow us to guide you onto the right path as you embark on your investment journey. With this innovative platform, you'll be ready to start in no time.
+            </p>
+            <p>
+                The fund can be initiated in just a few minutes with minimal costs, thanks to our blockchain-based infrastructure. We believe it is crucial to 
+                redistribute this power and profitability.
+            </p>
+         </div>
+         <div class="our-service_cards">
+
+            <div class="plan1 services_card">
+                <div class="service-header">
+                    <div class="service-head">
+                        <img src="photos/Icons/▶.svg" alt="">
+                        <p> First plan</p>
+                    </div>
+                    <p>profit 20%</p>
+                </div>
+                <div class="our-service_pricing">
+                    <img src="photos/iilustrations/Plan1.jpg" alt="">
+                    <div class="our-service_text">
+                        <p>Min invest: <span>$</span>30</p>
+                        <p>Max invest: <span>$</span>499</p>
+                        <p>Duration: 24hours</p>
+                        <p>Referral Bonus: 3%</p>
+                        <p>24/7 info</p>
+                </div>
+            </div>
+            <a class="register" href="login.html">Explore Now</a>
+         </div>
+
+            <div class="plan2 services_card">
+                <div class="service-header">
+                    <div class="service-head">
+                        <img src="photos/Icons/▶.svg" alt="">
+                        <p> Second plan</p>
+                    </div>
+                    <p>profit 40%</p>
+                </div>
+                <div class="our-service_pricing">
+                    <img src="photos/iilustrations/plan2.jpeg" alt="">
+                    <div class="our-service_text">
+                        <p>Min invest: <span>$ </span>400</p>
+                        <p>Max invest: <span>$ </span> 499</p>
+                        <p>Duration: 24hours</p>
+                        <p>Referral Bonus: 3%</p>
+                        <p>24/7 info</p>
+                </div>
+                </div>
+                <a class="register" href="login.html">Explore Now</a>
+         </div>
+
+            <div class="plan3 services_card">
+                <div class="service-header">
+                    <div class="service-head">
+                        <img src="photos/Icons/▶.svg" alt="">
+                        <p> First plan</p>
+                    </div>
+                    <p>profit 20%</p>
+                </div>
+                <div class="our-service_pricing">
+                    <img src="photos/iilustrations/Plan1.jpg" alt="">
+                    <div class="our-service_text">
+                        <p>Min invest: <span>$ </span> 30</p>
+                        <p>Max invest: <span>$ </span> 499</p>
+                        <p>Duration:   24hours</p>
+                        <p>Referral Bonus:   3%</p>
+                        <p>24/7 info</p>
+                </div>
+                </div>
+                <a class="register" href="login.html">Explore Now</a>
+         </div>
+
+            <div class="plan4 services_card">
+                <div class="service-header">
+                    <div class="service-head">
+                        <img src="photos/Icons/▶.svg" alt="">
+                        <p> First plan</p>
+                    </div>
+                    <p>profit 20%</p>
+                </div>
+                <div class="our-service_pricing">
+                    <img src="photos/iilustrations/Plan1.jpg" alt="">
+                    <div class="our-service_text">
+                        <p>Min invest: <span>$ </span> 30</p>
+                        <p>Max invest: <span>$ </span> 499</p>
+                        <p>Duration:   24hours</p>
+                        <p>Referral Bonus:   3%</p>
+                        <p>24/7 info</p>
+                </div>
+                </div>
+                <a class="register" href="login.html">Explore Now</a>
+             </div>
+
+         </div>
+    </div>
+
+    <div class="get_registered" id="get_registered">
+        <div class="text-header">
+            <div class="header black ">How to get<span class="color">Started</span></div>
+            <p class="black">
+                Embarking on your investment journey with High Capital is a straightforward and rewarding process. Our platform is designed to provide you with a 
+                seamless experience, ensuring that you can start investing with minimal effort and maximum security. Here's how you can get started:
+            </p>
+         </div>
+
+         <a class="register" href="signup.html">View membership plan</a>
+
+         <div class="get-started-cards">
+            <div class="new-acount started-card">
+                <div class="Reg-sub-head">Create an Account</div>
+
+                <div class="get-started_p">
+                    <p>First click on "Open An Account"
+                        Then fill in the following information</p>
+                    <p>1. Enter your full name</p>
+                    <p>2. Enter the username of your choice</p>
+                    <p>3. Enter your active email address</p>
+                    <p>4. Re-enter the email address you entered at number 3 </p>
+                    <p>5. Enter your payment method, either High capital or Bitcoin wallet address</p>
+                    <p>6. Create a strong password for your login</p>
+                    <p>7. Re-enter the password</p>
+                    <p>8. Write a secret question (Optional)</p>
+                    <p>9. Write a secret answer (Optional)</p>
+                    <p>10. Click the small box to agree to the company's terms and conditions</p>
+                    <p>11. Click on the light blue button that says "REGISTER" </p>
+                    <p>With this few steps, you have successfully registered</p>
+                    <p>Your login details will be immediately sent to your email after your registration.</p>
+                </div>
+                <a class="register" href="signup.html">Get Started</a>
+            </div>
+
+            <div class=" firxst-asset started-card">
+                <div class="Reg-sub-head">purchase your first Asset</div>
+
+                <div class="get-started_p">
+                    <p>
+                        Once your account is set up, you will have unlimited access to a wide range of profitable assets to invest in. 
+                        Our platform offers a diverse selection of digital assets that have been carefully curated for their profitability.
+                         Your earnings will automatically be credited to your wallet once your contract starts.
+                    </p>
+                </div>
+                <a class="register" href="login.html">Get Started</a>
+            </div>
+            <div class="request started-card">
+                <div class="Reg-sub-head">Make a Withdrawal Request</div>
+
+                <div class="get-started_p">
+                    <p>
+                        After collecting or claiming your earnings, head to the withdrawal section to withdraw your funds.
+                         The funds will be immediately sent to your wallet address, ensuring that you have quick and easy 
+                         access to your profits.
+                    </p>
+                </div>
+                <a class="register" href="login.html">Get Started</a>
+            </div>
+
+            <div class="build-site sumary " >
+                <p>Take Your Website to Next Level!</p>
+                <h2 class="blue">Innovative It Helping All Over The World!</h2>
+                <p>Financial experts info or help you to to find out which way you can raise your funds more, 
+                    and build your own website.</p>
+                <a href="https://wa.me/+2348163895833" target="_blank" rel="noopener" class="consultation">Request consultation</a>
+            </div>
+
+            <div class="quality sumary">
+                <span class="blue">2,589</span>
+                <p>Active Investors</p>
+                <span class="blue">4,518</span>
+                <p>Happy Customers</p>
+                <span class="blue">6,274</span>
+                <p>Hours Worked</p>
+                <span class="blue">2,345</span>
+                <p>Withdrawals</p>
+            </div>
+
+         </div>
+         
+    </div>
+
+    <div class="Testimonial" id="Testimonial">
+        <div class="testimonia-speech">
+            <h2 class="speech-header">Testimonial</h2>
+            <p>At High Capital, our clients' satisfaction is our top priority. We take pride in the positive feedback 
+                we receive from our valued investors. Their words inspire us to continually improve and innovate. 
+                Here are some of the heartfelt testimonials from our clients who have experienced the benefits of our 
+                secure and profitable investment platform. Their success stories are a testament to our commitment to 
+                excellence and our dedication to helping you achieve your financial goals.
+            </p>
+        </div>
+
+        <div class="over-flow-control testmonies">
+            <div class="testimony">
+                <div class="testimony-talk">
+                    <p>
+                        “When I came across High Capital, I thought it was another scam strategy, but to my surprise, 
+                        it wasn't. I earned immediately after my contract expired. Snappy withdrawal.”
+                    </p>
+                </div>
+                <div class="testimony-profile">
+                    <img src="photos/Ngalete matins.jpeg" alt="">
+                    <div class="profile-name">
+                        <h3>Ngalete matins</h3>
+                        <h4>investor</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="testimony">
+                <div class="testimony-talk">
+                    <p>
+                        "Finally, after what seems like ages, I found a platform that doesn’t
+                         look like a carbon copy of every other investment agency. Highly profitable assets to invest in."
+                    </p>
+                </div>
+                <div class="testimony-profile">
+                    <img src="photos/Roland stones.jpeg" alt="">
+                    <div class="profile-name">
+                        <h3>Roland Stone</h3>
+                        <h4>investor</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="testimony">
+                <div class="testimony-talk">
+                    <p>
+                        "Thank you for guiding me through the investment process, understanding, and always being ready to inform me.
+                         I love your innovative thinking!"
+                    </p>
+                </div>
+                <div class="testimony-profile">
+                    <img src="photos/Angela steve.jpg" alt="">
+                    <div class="profile-name">
+                        <h3>Angela Steve</h3>
+                        <h4>investor</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="testimony">
+                <div class="testimony-talk">
+                    <p>
+                        "Really great platform, with very fast customer support. Contacting my account manager for an issue concerning my account
+                         didn't take long at all!"
+                    </p>
+                </div>
+                <div class="testimony-profile">
+                    <img src="photos/Ramesh Ravitra.jpeg" alt="">
+                    <div class="profile-name">
+                        <h3>Ramesh Ravitra</h3>
+                        <h4>investor</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="testimony">
+                <div class="testimony-talk">
+                    <p>
+                        "When I first stumbled upon High Capital, I thought it was just another scam. But to my surprise, it wasn't. I got my earnings 
+                        immediately after my contract expired. Quick and easy withdrawal, no wahala!"
+                    </p>
+                </div>
+                <div class="testimony-profile">
+                    <img src="photos/Ngozi turner.jpeg" alt="">
+                    <div class="profile-name">
+                        <h3>Nkechi Turner</h3>
+                        <h4>investor</h4>
+                    </div>
+                </div>
+            </div>
+
+            <i class="fa-solid fa-angle-left fa-2xl scroll-arrow" id="testimony-scroll-left"></i>
+            <i class="fa-solid fa-angle-right fa-2xl scroll-arrow" id="testimony-scroll-right"></i>
+        </div>
+    </div>
+
+    <div class="contact_us" id="contact_us">
+        <div class="contact-card">
+            <div class="contact">
+                <div class="contact-details">
+                    <div class="contact-us_img">
+                        <img src="photos/Icons/Contact.svg" alt="">
+                    </div>
+                    <a href="https://wa.me/+2348163895833" target="_blank" rel="noopener">+2348163895833</a>
+                </div>
+            </div>
+            <div class="contact">
+                <div class="contact-details">
+                    <div class="contact-us_img">
+                        <img src="photos/Icons/Email.svg" alt="">
+                    </div>
+                    <a href="mailto:bosssantexdlyon@gmail.com">Highcapital@gmail.com</a>
+                </div>
+            </div>
+            <div class="contact">
+                <div class="contact-details">
+                    <div class="contact-us_img">
+                        <img src="photos/Icons/location.svg" alt="">
+                    </div>
+                    <a href="https://www.google.com/maps/search/?api=1&query=17+Wole+cole+st+Surulere+Lagos" target="_blank" rel="noopener">View on Map</a>
+                </div>
+            </div>
+        </div>
+        <div class="infor">
+            <div class="info-speech">
+                <h2>Highcapital.com</h2>
+                <p>
+                    Financial experts are available to help you find the best ways to raise your funds. Our team is dedicated
+                     to providing you with personalized advice and strategies to maximize your investment potential. Whether 
+                     you're new to investing or an experienced trader, we have the expertise to guide you towards achieving your financial goals.
+                </p>
+                <div class="infor-chat">
+                    <img src="photos/Icons/chat-icon.png" alt="">
+                    <div class="need-help">
+                        <h2>Need help?</h2>
+                    <span class="chat-now" id="chat-now">Chat now</span>
+                </div>
+            </div>
+        </div>
+            <h2 class="speech-header">Information</h2>
+            <ul>
+                <li><a href="#About_us">About Us</a></li>
+                <li><a href="#our_services">Our sevices</a></li>
+                <li><a href="#get_registered">Get Registered</a></li>
+                <li><a href="#Testimonial">Testimonial</a></li>
+                <li><a href="login.html">Log In</a></li>
+                <li><a href="#contact_us">Contact Us</a></li>
+                <li><a href="termsandconditions.html">Terms & conditions</a></li>
+            </ul>
+            <h2 class="speech-header">Newsletter Signup</h2>
+                <p>
+                    Sign up today for hints, tips and the latest news and updates.
+                </p>
+                <form action="#" method="post">
+                    <input type="email" name="email" placeholder="Email*" required>
+                    <button type="submit" class="register">Subscribe</button>
+                </form>
+                <footer>
+                    <a href="#landing_page">Top <i class="fa-solid fa-arrow-up"></i></a>
+                    <p>2010  - 2025  All right reserved</p>
+                </footer>
+        </div>
+    </div>
+</div>
+
+
+<script src="https://cdn.socket.io/4.0.0/socket.io.min.js"></script>
+
+<script src="chat.js"></script>
+<script src="script.js"></script>
+
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/67809b88af5bfec1dbe98ba2/1ih75v3qr';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Irish+Grover&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://kit.fontawesome.com/d5a2a27062.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../style/invest.css">
+    <title>High Capital</title>
+</head>
+<body>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="investment.html">Account</a></li> 
+            <li><a href="../index.html#About_us">About Us</a></li>
+            <li><a href="../index.html#Testimonial">Testimonial</a></li>
+            <li><a class="logout-link" href="#">Log Out</a></li>
+            <li><a href="../index.html#contact_us">Contact Us</a></li>
+            <li><a href="../termsandconditions.html">Terms & conditions</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <h3 class="logo">High Capital</h3>
+    </nav>
+
+    <div class="all-body body">
+        <div class="header">
+            <div class="header-text">
+                <h2>EDIT ACCOUNT</h2>
+            </div>
+        </div>
+            <form class="edit-account-form" id="edit-account-form">
+                <div class="profile-picture">
+                    <img src="../images/default-profile.png" alt="Profile Picture" id="profile-picture">
+                    <label for="profile-picture-upload" class="sr-only">Upload Profile Picture</label>
+                    <input type="file" id="profile-picture-upload" name="profile-picture-upload" accept="image/*" title="Upload Profile Picture">
+                </div>
+                <div class="input-icon">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" name="username" id="username" placeholder="Username" required>
+                </div>
+                <div class="input-icon">
+                    <i class="fa-solid fa-key"></i>
+                    <input type="password" name="password" id="password" placeholder="Password" required>
+                </div>
+                <div class="input-icon">
+                    <i class="fa-solid fa-key"></i>
+                    <input type="password" name="confirm-password" id="confirm-password" placeholder="Confirm Password" required>
+                </div>
+                <div class="input-icon">
+                    <i class="fa-solid fa-bitcoin-sign"></i>
+                    <input type="text" name="bitcoin-wallet" id="bitcoin-wallet" placeholder="Your Bitcoin Wallet Address" required>
+                </div>
+                <div class="input-icon">
+                    <i class="fa-solid fa-wallet"></i>
+                    <input type="text" name="usdt-wallet" id="usdt-wallet" placeholder="Your USDT TRC20 Wallet Address" required>
+                </div>
+                <div class="input-icon">
+                    <i class="fa-brands fa-ethereum"></i>
+                    <input type="text" name="ethereum-wallet" id="ethereum-wallet" placeholder="Your Ethereum Wallet Address" required>
+                </div>
+                <div class="input-icon">
+                    <i class="fa-solid fa-wallet"></i>
+                    <input type="text" name="dogecoin-wallet" id="dogecoin-wallet" placeholder="Your Dogecoin Wallet Address" required>
+                </div>
+                <div class="input-icon">
+                    <i class="fa-regular fa-envelope"></i>
+                    <input type="email" name="email" id="email" placeholder="Email Address" required>
+                </div>
+                <div class="input-icon">
+                    <i class="fa-regular fa-envelope"></i>
+                    <input type="email" name="retyped-email" id="retyped-email" placeholder="Retype Email Address" required>
+                </div>
+                <button type="submit" class="register">Update Account</button>
+            </form>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <ul class="footer-links">
+            <li><a href="investment.html">Account</a></li>
+            <li><a href="../index.html#About_us">About Us</a></li>
+            <li><a href="deposit.html">Make deposit</a></li>
+            <li><a href="history.html">Transaction History</a></li>
+            <li><a href="withdraw.html">Withdraw</a></li>
+            <!--<li><a href="edit_account.html">Edit Account</a></li>-->
+            <li><a href="security.html">Security</a></li>
+            <li><a href="#">Log Out</a></li>
+        </ul>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>

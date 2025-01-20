@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Irish+Grover&display=swap" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+        <script src="https://kit.fontawesome.com/d5a2a27062.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.socket.io/4.0.0/socket.io.min.js"></script>
+        <link rel="stylesheet" href="../style/invest.css">
+        <title>High capital</title>
+    </head>
+<body>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="investment.html">Account</a></li> 
+            <li><a href="../index.html#About_us">About Us</a></li>
+            <li><a href="../index.html#Testimonial">Testimonial</a></li>
+            <li><a class="logout-link" href="#">Log Out</a></li>
+            <li><a href="../index.html#contact_us">Contact Us</a></li>
+            <li><a href="../termsandconditions.html">Terms & conditions</a></li>
+    </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <h3 class="logo">High Capital</h3>
+</nav>
+
+<div class="all-body body">
+    <div class="header">
+        <div class="header-text">
+            <h2>Transaction History</h2>
+        </div>
+    </div>
+        <div class="transaction-content">
+            <div class="transaction">
+                <div class="select-currency">
+                    <label for="transaction-type">Transaction Type:</label>
+                    <select class="all-transaction" id="transaction-type" title="transaction">
+                        <option value="all">All Transactions</option>
+                        <option value="deposit">Deposit</option> 
+                        <option value="earnings">Earnings</option> 
+                        <option value="referral">Referral Commission</option>
+                    </select>
+                </div>
+                <div class="select-currency">
+                    <label for="transaction-currency">Select Currency:</label>
+                    <select class="all-transaction" id="transaction-currency" title="transaction">
+                        <option value="all">All Currencies</option> 
+                        <option value="bitcoin">Bitcoin</option>
+                        <option value="ethereum">Ethereum</option> 
+                        <option value="litecoin">Litecoin</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="date-format">
+                <div class="select-currency">
+                    <label for="start-date">Choose Date:</label>
+                    <div class="start-date">
+                        <select id="start-month" title="Start Month">
+                        <option value="0">All Months</option>
+                        <option value="01">January</option>
+                        <option value="02">February</option>
+                        <option value="03">March</option>
+                        <option value="04">April</option>
+                        <option value="05">May</option>
+                        <option value="06">June</option>
+                        <option value="07">July</option>
+                        <option value="08">August</option>
+                        <option value="09">September</option>
+                        <option value="10">October</option>
+                        <option value="11">November</option>
+                        <option value="12">December</option>
+                        </select>
+                        <select id="start-year" title="Start Year">
+                        <option value="0">All Years</option>
+                        <option value="2020">2020</option>
+                        <option value="2021">2021</option>
+                        <option value="2022">2022</option>
+                        <option value="2023">2023</option>
+                        <option value="2024">2024</option>
+                        <option value="2025">2025</option>
+                        <option value="2026">2026</option>
+                        <option value="2027">2027</option>
+                        <!-- Add more years as needed -->
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class=" copy-referal" id="filter-button">Filter</button>
+        </div>
+
+        <div class="transaction-history" id="transaction-history">
+             <!-- Transactions will be dynamically inserted here -->
+        </div>
+
+</div>
+
+<footer class="footer">
+    <div class="footer-burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div>
+    <ul class="footer-links">
+        <li><a href="investment.html">Account</a></li>
+        <li><a href="../index.html#About_us">About Us</a></li>
+        <li><a href="deposit.html">Make deposit</a></li>
+        <!--<li><a href="history.html">Transaction History</a></li>-->
+        <li><a href="withdraw.html">Withdraw</a></li>
+        <li><a href="edit_account.html">Edit Account</a></li>
+        <li><a href="security.html">Security</a></li>
+        <li><a class="logout-link" href="#">Log Out</a></li>
+    </ul>
+</footer>
+
+
+
+<script src="../data.js"></script>
+<script src="../script.js"></script>
+
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/67809b88af5bfec1dbe98ba2/1ih75v3qr';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
+
+</body>
+</html>
+
+

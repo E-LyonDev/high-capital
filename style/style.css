@@ -9,17 +9,32 @@
 body{
     display: flex;
     flex-direction: column;
-    background-color: rgba(97, 97, 97, 0.5);
+    background-color: #063057;
+    scroll-behavior: smooth;
+}
+/*style rules across all platforms*/
+.consultation{
+    width: fit-content;
+    padding: 10px;
+    border: none;
+    box-shadow: 10px #000;
+    background-color: #0e5fac;
+    color: #fff;
+    transition: 0.5s ease-in-out;
+    margin-top: 20px;
+}
+.consultation:hover{
+    background-color: #063057;
 }
 nav{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    background-color: #333;
+    gap: 15px;
+    background: #000;
     width: 100%;
     height: fit-content;
-    padding: 10px 20px;
-    position: relative;
+    padding: 15px;
     position: fixed;
     z-index: 10;
 }
@@ -27,13 +42,28 @@ nav{
     display: flex;
     align-items: center;
     font-size: medium;
-    gap: 10px;
+    gap: 15px;
     font-weight: 500;
     list-style: none;
     color: #fff;
     z-index: 10;
+    flex-wrap: wrap;
+    
+}
+.nav-links li{
+    background: url('../photos/iilustrations/logo-clip.jpeg') no-repeat center center;
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    font-size: 1rem;
+    font-size: 1rem;
 }
 .nav-links li:hover{
+    background: none;
+    -webkit-background-clip: border-box; 
+    -webkit-text-fill-color: #BAB520; 
+    background-clip: border-box; 
     color: #BAB520;
     text-decoration: underline;
     cursor: pointer;
@@ -47,8 +77,8 @@ nav{
     font-size: large;
     text-transform: uppercase;
     letter-spacing: 1px;
-    background: linear-gradient(to right, #3C2CC8, #A349BA, #BAB520);
-    -webkit-background-clip: text; 
+    background: linear-gradient(to left, #0000FF, #800080, #FFFF00); /* Blue, Purple, Yellow gradient */
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
@@ -64,7 +94,6 @@ nav{
     margin: 5px;
     transition: all 0.3s ease;
 }
-
 /*body style rules are here*/
 a{
     text-decoration: none;
@@ -73,7 +102,6 @@ a{
 }
 a:hover{
     color: #ECFC07;
-    text-decoration: underline;
     cursor: pointer;
 }
 p{
@@ -168,13 +196,13 @@ p{
     transition: opacity 1s ease-in-out;
 }
 .bg1{
-    background-image: url(photos/bg1.jpg);
+    background-image:url(../photos/bg1.jpg) ;
 }
 .bg2{
-    background-image:url(photos/bg2.jpg) ;
+    background-image:url(../photos/bg2.jpg) ;
 }
 .bg3{
-    background-image:url(photos/bg3.webp) ;
+    background-image:url(../photos/bg3.webp) ;
 }
 .text-content{
     position: absolute;
@@ -204,7 +232,7 @@ p{
     grid-row: 2/3;
     grid-column: 1/2;
     height: 100%;
-    background-image:url(photos/About_us-img.jpg) ;
+    background-image:url(../photos/About_us-img.jpg) ;
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -285,7 +313,7 @@ p{
     grid-column: 2/4;
     height: 100%;
     background-color: aqua;
-    background-image:url(photos/bg1.jpg);
+    background-image:url(../photos/bg1.jpg);
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -370,7 +398,6 @@ p{
     grid-column: 1/4;
     height: fit-content;
     padding: 10px;
-
     color: #000;
     display: flex;
     flex-direction: column;
@@ -379,7 +406,7 @@ p{
     gap: 10px;
 }
 .black{
-    color: black;
+    color: #fff;
 }
 .get-started-cards{
     display: flex;
@@ -439,20 +466,6 @@ p{
     font-size: large;
 }
 
-.consultation{
-    width: fit-content;
-    padding: 10px;
-    border: none;
-    box-shadow: 10px #000;
-    background-color: #5699d8;
-    color: #fff;
-    transition: 0.5s ease-in-out;
-    margin-top: 20px;
-}
-.consultation:hover{
-    background-color: #184977;
-}
-
 /*testimonial style rules are here*/
 .Testimonial{
     grid-row: 4/5;
@@ -471,6 +484,7 @@ p{
     justify-content: center;
     align-items: center;
     gap: 10px;
+    color: #fff;
 }
 .speech-header{
     background-color: #184977;
@@ -614,13 +628,14 @@ p{
         transform: scale(1); /* Initial state */
     }
     50% {
-        transform: scale(1.1); /* Zoom in */
+        transform: scale(1.5); /* Zoom in */
         color: #333;
     }
     100% {
         transform: scale(1); /* Zoom out */
     }
 }
+
 .infor{
     display: flex;
     flex-direction: column;
@@ -698,15 +713,14 @@ p{
 /** style rules for sign up html file are here **/
 .signup-section{
     color: #fff;
-    background-image:url(photos/bg3.webp) ;
+    background-image:url(../photos/bg3.webp) ;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    width: 100vw;
+    width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
-    gap: 20px;
     justify-content: start;
     align-items: center;
     position: relative;
@@ -730,10 +744,14 @@ p{
     flex-direction: column;
     justify-content: start;
     align-items: center;
+    width: 80%;
     gap: 10px;
     padding: 20px;
     margin-top: 40px;
     z-index: 1;
+}
+.signup-section h2{
+    margin-bottom: 10px;
 }
 #login-form{
     display: flex;
@@ -785,7 +803,50 @@ p{
 .links:hover{
     text-decoration: underline;
 }
+/*Style rules for edit_account.html file are here*/
+#edit-account-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    margin-top: 40px;
+    z-index: 1;
+}
+/* Profile Picture Section */
+.profile-picture {
+    display: flex;
+    width: 80%;
+    align-self: start;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
 
+.profile-picture img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    background-color: #fff;
+    font-size: small;
+    object-fit: cover;
+}
+
+.profile-picture input[type="file"] {
+    width: 80%;
+    background: rgba(192, 192, 192, 0.7);
+    color: #000;
+    padding: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    border: 2px solid rgba(192, 192, 192, 0.7);
+    border-radius: 20px 0 20px 0;
+}
+
+.profile-picture label {
+    display: none;
+}
 
 /** style rules for privacy policy **/
 .privacy-policy{
@@ -794,7 +855,6 @@ p{
     width: 100vw;
     padding: 20px;
     line-height: 1.6;
-    color: #333;
     color: #fff;
     background-image:url(photos/bg3.webp) ;
     background-size: cover;
@@ -814,12 +874,12 @@ p{
 
 .privacy-policy h1 {
     text-align: center;
-    color: #0056b3;
+    color: #ECFC07;
     margin-bottom: 20px;
 }
 
 .privacy-policy h2 {
-    color: #0056b3;
+    color: #ECFC07;
     margin-top: 20px;
 }
 
@@ -837,7 +897,7 @@ p{
 }
 
 .privacy-policy a {
-    color: #0056b3;
+    color: #ECFC07;
     text-decoration: none;
 }
 
@@ -849,17 +909,17 @@ p{
     justify-content: center;
     align-items: center;
     width: 100%;
-    color: #210CC6;
+    color: #fff;
     height: fit-content;
     margin-bottom: 20px;
-    font-size: large;
+    font-size: 1rem;
     font-weight: 500px;
 }
 .privacy_sign-up:hover{
     text-decoration: underline;
 }
 
-/* max-width: 900px */
+/* max-width: 1000px */
 @media screen and (max-width: 1000px) {
     .body_sections{
         display: flex;
@@ -923,32 +983,43 @@ p{
     }
 }
 
-/* max-width: 600px */
+/* max-width: 750px */
 @media (max-width: 750px) {
 
     nav{
         justify-content: space-between;
+        padding: 10px;
     }
     .nav-links {
         flex-direction: column;
-        gap: 20px;
+        gap: 10px;
         position: absolute;
         left: -100%;
-        top: 48px;
+        top: 0;
         width: 100%;
         text-align: center;
+        padding-top: 48px;
         padding-bottom: 10px;
-        border-radius: 0 0 20px 20px;
-        background-color: rgba(51, 51, 51, 0.95);
+        border-radius: 0 0 30px 30px;
+        background: #000;
         transition: transform 0.5s ease-in-out;
     }
-    
     .nav-links li {
-        letter-spacing: 1px;
+        letter-spacing: 2px;
         margin: 10px 0;
     }
     .nav-links.nav-active{
         transform: translateX(100%);
+    }
+ 
+    body.nav-active .all-body{
+        overflow: hidden;
+        pointer-events: none; 
+        opacity: 0.5; 
+    }
+    body.nav-active nav {
+        pointer-events: auto;
+        opacity: 1;
     }
     .nav-active ~ .content {
         filter: blur(5px);
@@ -971,7 +1042,6 @@ p{
         transform: rotate(45deg) translate(-5px, -6px);
         background-color: #ECFC07;
     }
-
 
     .About_us {
         padding: 10px;
@@ -1036,9 +1106,8 @@ p{
     }
 }
 
-/* max-width: 400px */
-@media (max-width: 400px) {
-
+/* max-width: 500px */
+@media (max-width: 500px) {
     .about-us_card{
         gap: 5px;
         padding: 5px;
@@ -1139,9 +1208,12 @@ p{
     .privacy-policy ul {
         margin-left: 10px;
     }
+    .profile-picture {
+        width: 100%;
+    }
 }
 
-/* max-width: 200px */
+/* max-width: 350px */
 @media (max-width: 350px) {
     .logo{
         font-size: medium;
@@ -1197,7 +1269,6 @@ p{
     }
     .consultation{
         padding: 5px;
-        margin-top: 20px;
     }
     .Testimonial{
         gap: 5px;
@@ -1274,15 +1345,36 @@ p{
     }
     /*sign up section*/
     .signup-section{
+        margin-top: 20px;
+        gap: 10px;
+    }
+    .signup-section h2{
+        font-size: 1rem;
+        font-weight: 300;
+    }
+    #signup-form{
+        width: 90%;
+    }
+    .profile-picture {
+        width: 100%;
+    }
+    .profile-picture img {
+        width: 40px;
+        height: 40px;
+    }
+    .profile-picture input[type="file"] {
         padding: 10px;
-        margin-top: 70px;
     }
 }
 
+/* max-width: 250px */
 @media (max-width: 250px){
     .infor footer a{
         position: relative;
         bottom: 0;
         right: 0;
+    }
+    #signup-form{
+        width: 95%;
     }
 }

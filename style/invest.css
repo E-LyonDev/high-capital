@@ -1,0 +1,1069 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    background-image: url(../photos/bg2.jpg) ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #333;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: fit-content;
+    background-color: rgba(51, 51, 51, 0.9);
+    z-index: 1; 
+}
+body > * {
+    position: relative; 
+    z-index: 2;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+a:hover{
+    color: #ECFC07;
+    cursor: pointer;
+}
+p{
+    padding: 5px;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+    background: #000;
+    width: 100%;
+    height: fit-content;
+    padding: 15px;
+    position: fixed;
+    z-index: 10;
+}
+.nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: medium;
+    gap: 10px;
+    font-weight: 500;
+    list-style: none;
+    color: #fff;
+    z-index: 10;
+    flex-wrap: wrap;
+    
+}
+.nav-links li{
+    background: url(../photos/iilustrations/logo-clip.jpeg) no-repeat center center;
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-decoration: none;
+}
+.nav-links li:hover{
+    background: none;
+    -webkit-background-clip: border-box; 
+    -webkit-text-fill-color: #BAB520; 
+    background-clip: border-box; 
+    color: #BAB520;
+    cursor: pointer;
+}
+.logo{
+    color: #fff;
+    display: flex;
+    font-family: "Irish Grover";
+    font-weight: 400;
+    font-style: normal;
+    font-size: large;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background: linear-gradient(to left, #0000FF, #800080, #FFFF00); /* Blue, Purple, Yellow gradient */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.burger{
+    display: none;
+    cursor: pointer;
+    z-index: 11;
+}
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+.body{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    min-height: 100vh;
+    height: fit-content;
+    justify-content: start;
+    align-items: center;
+    padding: 90px 0;
+}
+
+/*investment.html style rules are here*/
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    width: 100%;
+    color: #fff;
+}
+.header-text{
+    width: fit-content;
+    height: fit-content;
+    padding: 10px 20px;
+    border-radius: 30px;
+    background: #fff;
+    color: #000;
+}
+.date-access{
+    display: flex;
+    gap: 10%;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #fff;
+    color: #333;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+.blue{
+    color: #184977;
+}
+.line{
+    width: 10px;
+    height: 100%;
+    background-color: #000;
+}
+.date{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    padding: 10px;
+    border-top: 2px solid #415A77;
+}
+.cadlender{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* this .content style is for all contents across login pages*/
+.content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: fit-content;
+    color: #fff;
+    gap: 15px;
+    padding: 10px;
+}
+.for-bitcoin{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 20px;
+}
+
+.coin-header{
+    width: 100%;
+    height: fit-content;
+    padding: 10px 0;
+    background-color: #184977;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+.coin-header i{
+    transition: transform 0.5s ease;
+}
+.coin-header.open i{
+    transform: rotate(180deg);
+}
+.all-coin-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10%;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+}
+.all-coin-cards.open {
+    max-height: 600px; /* Adjust this value based on the content height */
+    padding: 10px;
+    overflow: visible;
+}
+.coin-header:hover{
+    background-color: #092c4d;
+}
+.coin-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    max-width: 200px;
+    max-height: 150px;
+    background: #fff;
+    color: #333;
+    padding: 20px 15px;
+    margin-top: 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 10px 0 10px 0;
+}
+.coin-card span{
+    color: #184977;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #333;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.referal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    width: 80%;
+    background: #fff;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    margin-bottom: 10px;
+}
+.referal-link{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.referal-link i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    border-radius: 50%;
+    background-color: #184977;
+}
+.copy-referal{
+    padding: 5px 10px;
+    width: fit-content;
+    height: fit-content;
+    color: #fff;
+    background-color: #184977;
+    border-radius: 5px;
+    border: none;
+}
+.copy-referal:hover{
+    background-color: #092c4d;
+    text-decoration: none;
+    color: #fff;
+}
+
+/*Deposit.html style rules are here*/
+.investment-plan{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    width: 100%;
+    height: fit-content;
+    padding: 10px;
+}
+.plans{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: fit-content;
+    height: fit-content;
+    background: rgba(192, 192, 192, 0.7);
+    color: #000;
+    padding: 20px 15px;
+    margin-top: 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    border: 2px solid rgba(192, 192, 192, 0.7);
+    border-radius: 20px 0 20px 0;
+}
+.plan-header{
+    display: flex;
+    height: fit-content;
+    padding: 5px;
+    background-color: #000;
+    border-radius: 5px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.plan-header h2{
+    background: linear-gradient(to right, #0000FF, #800080, #FFFF00);
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.payment-plan_header{
+    display: flex;
+    height: fit-content;
+    padding: 15px;
+    background-color: #000;
+    border-radius: 5px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.payment-plan_header h2{
+    background: linear-gradient(to right, #0000FF, #800080, #FFFF00);
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.payment-plan_header i{
+    font-size: 1.5rem;
+    color: #ECFC07;
+    cursor: pointer;
+    
+}
+.payment-plan_header i:hover{
+    transition: 0.5s;
+    transform: rotate(45deg);
+}
+
+span{
+    background: linear-gradient(to right, #0000FF, #800080);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.register{
+    background: linear-gradient(to right, #210CC6, #BDC90C);
+    padding: 5px 20px;
+    color: #fff;
+    border: none;
+    border-radius: 10px 0 10px 0;
+    font-size: 1.2em;
+    cursor: pointer;
+    width: fit-content;
+    transition: background 0.3s ease-out;
+    position: relative;
+    overflow: hidden;
+}
+.register::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: #BDC90C;
+    transition: left 0.3s ease-out;
+    border-radius: 10px 0 10px 0;
+    z-index: -1;
+}
+.register:hover::before {
+    left: 0;
+}
+.register:hover{
+    color: #000;
+    transform: translateX(0);
+}
+.make-payment{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    top: 40px;
+
+}
+.make-payment-active{
+    display: flex;
+}
+.paymen-plans{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 90%;
+    height: fit-content;
+    background: rgba(192, 192, 192, 0.95);
+    color: #000;
+    padding: 15px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    border: 2px solid rgba(192, 192, 192, 0.7);
+    border-radius: 20px 0 20px 0;
+}
+.plan-price{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 95%;
+    height: fit-content;
+}
+.thanks-massage{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+    width: 50%;
+    height: fit-content;
+    background: rgba(192, 192, 192, 0.95);
+    color: #333;
+    padding: 20px 15px;
+    margin-top: 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    border: 2px solid rgba(192, 192, 192, 0.7);
+    border-radius: 20px 0 20px 0;
+    position: absolute;
+    top: 100px;
+}
+.thanks-massage_ok{
+    align-self: center;
+    background: linear-gradient(to right, #210CC6, #BDC90C);
+    padding: 5px;
+    color: #fff;
+    border: none;
+    border-radius: 10px 0 10px 0;
+    font-size: 1rem;
+    cursor: pointer;
+    width: fit-content;
+}
+/*history.html style rules are here*/
+.transaction-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 90%;
+    height: fit-content;
+    gap: 10px;
+    background: rgba(192, 192, 192, 0.7);
+    color: #000;
+    padding: 15px;
+    margin-top: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    border: 2px solid rgba(192, 192, 192, 0.7);
+    border-radius: 25px 0 25px 0;
+}
+.transaction{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 10px;
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: none;
+    padding: 10px;
+}
+.date-format{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.date-from{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.start-date{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+/*style rules for all select tag started here*/
+.select-currency{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+select{
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background: rgba(192, 192, 192, 0.5);
+    color: #000;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    border: 2px solid rgba(192, 192, 192, 0.7);
+    border-radius: 8px 0 8px 0;
+}
+select:hover{
+    background: rgba(192, 192, 192, 0.95);
+}
+/*style rules for all select tag ended here*/
+.transaction-history{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    width: 90%;
+    height: fit-content;
+    background: rgba(192, 192, 192, 0.7);
+    color: #000;
+    margin-top: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    border: 2px solid rgba(192, 192, 192, 0.7);
+    border-radius: 25px 0 25px 0;
+}
+.history{
+    display: flex;
+    width: 95%;
+    height: fit-content;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    padding: 8px;
+    background: rgba(192, 192, 192, 0.9);
+    color: #000;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    border: 2px solid rgba(192, 192, 192, 0.7);
+    border-radius: 10px 0 10px 0;
+}
+.history-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.history-content p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #333;
+}
+.green{
+    color: #006400;
+    font-weight: 800;
+}
+.red{
+    color: #8B0000;
+    font-weight: 800;
+}
+/*style rules for withdrawal.html*/
+.withdraw-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: fit-content;
+    background: rgba(192, 192, 192, 0.7);
+    color: #000;
+    padding: 15px;
+    margin-top: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    border: 2px solid rgba(192, 192, 192, 0.7);
+    border-radius: 25px 0 25px 0;
+}
+.withdraw-form {
+    margin-top: 20px;
+}
+
+.withdraw-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.withdraw-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.withdraw-form button {
+    padding: 10px 20px;
+    background-color:#184977; 
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.withdraw-form button:hover {
+    background-color: #092c4d; 
+}
+/*Refered-user.html style rules are here*/
+.referral-dashboard {
+    width: 80%;
+    height: fit-content;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+.referral-dashboard h3 {
+    margin-top: 0;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+table th {
+    background-color: #f4f4f4;
+}
+.total-bonus {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+/*Style rules for logout.html  are here*/
+.log-out{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 80%;
+    height: fit-content;
+    background: rgba(192, 192, 192, 0.7);
+    color: #000;
+    padding: 15px;
+    margin-top: 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    border: 2px solid rgba(192, 192, 192, 0.7);
+    border-radius: 20px 0 20px 0;
+}
+/*Style rules for edit_account.html file are here*/
+.edit-account-form{
+    color: #fff;
+    width: 80%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: start;
+    align-items: center;
+}
+/* Profile Picture Section */
+.profile-picture {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+    padding: 10px;
+}
+.profile-picture img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    background-color: #fff;
+    font-size: small;
+    object-fit: cover;
+}
+
+.profile-picture input[type="file"] {
+    background: rgba(192, 192, 192, 0.7);
+    color: #000;
+    padding: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    border: 2px solid rgba(192, 192, 192, 0.7);
+    border-radius: 20px 0 20px 0;
+}
+
+.profile-picture label {
+    display: none;
+}
+.input-icon{
+    position: relative;
+    width: 100%;
+}
+.input-icon i{
+    position: absolute;
+    left: 5px;
+    top: 35%;
+    transform: translateY(-50%);
+    color: #fff;
+    background-color: #184977;
+    padding: 6px;
+    border-radius: 100%;
+}
+.input-icon input{
+    width: 100%;
+    padding: 10px 10px 10px 40px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    text-decoration: #000;
+}
+/*style for security.html*/
+.security-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 90%;
+    gap: 10px;
+    background: rgba(192, 192, 192, 0.7);
+    color: #000;
+    padding: 10px 5px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    border: 2px solid rgba(192, 192, 192, 0.7);
+    border-radius: 25px 0 25px 0;
+}
+.security-content ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 80%;
+}
+.security-content p{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    flex-wrap: wrap;
+    height: fit-content;
+}
+/* All footer style rules are here*/
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    width: 100%;
+    height: fit-content;
+    padding: 15px;
+    border-radius: 20px 20px 0 0;
+    position: fixed;
+    bottom: 0;
+    z-index: 10;
+}
+.footer-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    gap: 10px;
+    height: fit-content;
+    background-color: #000;
+    list-style: none;
+    flex-wrap: wrap;
+}
+.footer-links li{
+    background: url(../photos/iilustrations/logo-clip.jpeg) no-repeat center center;
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-decoration: none;
+}
+.footer-links li:hover{
+    background: none;
+    -webkit-background-clip: border-box; 
+    -webkit-text-fill-color: #BAB520; 
+    background-clip: border-box; 
+    color: #BAB520;
+    cursor: pointer;
+}
+.footer-burger{
+    display: none;
+    cursor: pointer;
+}
+.footer-burger div{
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+@media(max-width: 750px){
+    nav{
+        justify-content: space-between;
+        padding: 10px;
+    }
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        position: absolute;
+        left: -100%;
+        top: 0;
+        width: 100%;
+        text-align: center;
+        padding-top: 48px;
+        padding-bottom: 10px;
+        border-radius: 0 0 30px 30px;
+        background-color: #000;
+        transition: transform 0.5s ease-in-out;
+    }
+    
+    .nav-links li {
+        letter-spacing: 2px;
+        margin: 10px 0;
+    }
+    .burger{
+        display: block;
+    }
+    .nav-links.nav-active{
+        transform: translateX(100%);
+    }
+   .burger.toggle .line1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+        background-color: #ECFC07;
+    }
+    .burger.toggle .line2 {
+        background-color: #ECFC07;
+        opacity: 0;
+    }
+    .burger.toggle .line3 {
+        transform: rotate(45deg) translate(-5px, -6px);
+        background-color: #ECFC07;
+    }
+    body.nav-active .all-body{
+        overflow: hidden;
+        pointer-events: none; 
+        opacity: 0.5; 
+    }
+    body.nav-active nav {
+        pointer-events: auto;
+        opacity: 1;
+    }
+    .nav-active ~ .content {
+        filter: blur(5px);
+        transition: filter 0.5s ease-in-out;
+    }
+    .header-text{
+        padding: 10px 20px;
+    }
+    .date-access{
+        flex-direction: column;
+        width: 80%;
+    }
+    .referal{
+        flex-direction: column;
+        gap: 15px;
+    }
+    .referal-link{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+    .referal-link i{
+        font-size: 15px;
+        width: 35px;
+        height: 35px;
+    }
+    .copy-referal{
+        padding: 8px;
+        border-radius: 8px;
+    }
+    .thanks-massage{
+        width: 80%;
+        top: 100px;
+    }
+       /*footer styles*/
+    .footer{
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+    }
+    .footer-links{
+        flex-direction: column;
+        gap: 15px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-color: #000;
+        width: 100%;
+        padding: 15px 0 48px 0;
+        border-radius: 20px  20px  0 0;
+        transition: transform 0.5s ease-in-out;
+        transform: translateY(100%)
+    }
+    .footer-links li{
+        letter-spacing: 2px;
+    }
+    .footer-burger{
+        display: block;
+        z-index: 1;
+    }
+    .footer-links.footer-active{
+        transform: translateY(0);
+    }
+    .footer-burger.toggle .line1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+        background-color: #ECFC07;
+    }
+    .footer-burger.toggle .line2 {
+        background-color: #ECFC07;
+        opacity: 0;
+    }
+    .footer-burger.toggle .line3 {
+        transform: rotate(45deg) translate(-5px, -6px);
+        background-color: #ECFC07;
+    }
+
+    body.footer-active .all-body {
+        overflow: hidden;
+        pointer-events: none;
+        opacity: 0.5;
+        transition: 0.5s ease-in-out;
+    }
+    
+    body.footer-active footer {
+        pointer-events: auto;
+        opacity: 1;
+    }
+    
+    body.footer-active .content {
+        filter: blur(5px);
+        transition: filter 0.5s ease-in-out;
+    }
+    .profile-picture {
+        width: 100%;
+    }
+    .profile-picture img {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .profile-picture input[type="file"] {
+      width: 80%;
+    }
+    .make-payment{
+        top: 40px;
+        left: 2%;
+    
+    }
+    
+}
+
+@media (max-width: 350px){
+    .header-text h2{
+        font-size: medium;
+    }
+    .date{
+        flex-direction: column;
+        padding: 8px;
+    }
+    .your-rferral-link p{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .thanks-massage{
+        width: 90%;
+        top: 90px;
+        font-size: small;
+        font-weight: 500;
+        padding: 10px;
+        margin-top: 0;
+    }
+    .log-out{
+        font-size: small;
+        font-weight: 500;
+    }
+    
+}
+
+@media (max-width: 250px){
+    .logo{
+        font-size: medium;
+    }
+    .plan-price p{
+        display: flex;
+        flex-direction: column;
+    }
+    .coin-header h2{
+        font-size: medium;
+    }
+        /*hisstory.html style rules are here*/
+     select{
+            padding: 5px;
+            font-size: x-small;
+    }
+    .history{
+        justify-content: center;
+        gap: 5px;
+        padding: 5px;
+        font-size: smaller;
+    }
+    .start-date{
+        flex-direction: column;
+    }
+    table {
+       font-size: small;
+    }
+        
+}

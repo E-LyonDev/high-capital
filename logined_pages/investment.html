@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Irish+Grover&display=swap" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+        <script src="https://kit.fontawesome.com/d5a2a27062.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.socket.io/4.0.0/socket.io.min.js"></script>
+        <link rel="stylesheet" href="../style/invest.css">
+        <title>High capital</title>
+    </head>
+<body>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="deposit.html">Investment Plans</a></li> 
+            <li><a href="../index.html#About_us">About Us</a></li>
+            <li><a href="../index.html#Testimonial">Testimonial</a></li>
+            <li><a class="logout-link" href="#">Log Out</a></li>
+            <li><a href="../index.html#contact_us">Contact Us</a></li>
+            <li><a href="../termsandconditions.html">Terms & conditions</a></li>
+    </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <h3 class="logo">High Capital</h3>
+</nav>
+
+<div class="all-body body">
+    <div class="header">
+        <div class="header-text">
+            <h2>ACCOUNT</h2>
+        </div>
+    </div>
+
+    <div class="date-access">
+        <div class="date">
+            <div class="cadlender">
+                <i class="fa-regular fa-calendar-days"></i>
+                <p>Registration Date:</p>
+            </div>
+            <p class="blue">
+                <span id="month">January</span>
+                <span id="day">-10</span>
+                <span id="year">-2025</span>
+            </p>
+        </div>
+        
+        <div class="line"></div>
+
+        <div class="date">
+            <div class="cadlender">
+                <i class="fa-solid fa-wifi"></i>
+                <p>last Access:</p>
+            </div>
+            <p class="blue">
+                <span id="month">January</span>
+                <span id="day">-10</span>
+                <span id="year">-2025</span>
+                <span id="hours">16</span>
+                <span id="minutes">:49</span>
+            </p>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="for-bitcoin">
+            <div class="coin-header">
+                <h2>Bitcoin</h2>
+                <i class="fa-solid fa-angle-down"></i>
+            </div>
+            <div class="all-coin-cards">
+                <div class="coin-card">
+                    <span id="bitcoin-account-balance">$ 0.00</span>
+                    <p>Account Balance</p>
+                </div>
+                <div class="coin-card">
+                    <span id="bitcoin-total-earning">$ 0.00</span>
+                    <p>Earned Total</p>
+                </div>
+                <div class="coin-card">
+                    <span id="bitcoin-active-deposit">$0.00</span>
+                    <p>Active Deposit</p>
+                </div>
+                <div class="coin-card">
+                    <span id="bitcoin-total-deposit">$0.00</span>
+                    <p>Total Deposit</p>
+                </div>
+                <div class="coin-card">
+                    <span id="bitcoin-referral-bonus">$0.00</span>
+                    <p>Referal Bonus</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="for-bitcoin">
+            <div class="coin-header">
+                <h2>Ethereum</h2>
+                <i class="fa-solid fa-angle-down"></i>
+            </div>
+            <div class="all-coin-cards">
+                <div class="coin-card">
+                    <span id="ethereum-account-balance">$ 0.00</span>
+                    <p>account balance</p>
+                </div>
+                <div class="coin-card">
+                    <span id="ethereum-total-earning">$ 0.00</span>
+                    <p>Earned Total</p>
+                </div>
+                <div class="coin-card">
+                    <span id="ethereum-active-deposit">$0.00</span>
+                    <p>Active Deposit</p>
+                </div>
+                <div class="coin-card">
+                    <span id="ethereum-total-deposit">$0.00</span>
+                    <p>Total Deposit</p>
+                </div>
+                <div class="coin-card">
+                    <span id="ethereum-referral-bonus">$0.00</span>
+                    <p>Referal Bonus</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="for-bitcoin">
+            <div class="coin-header">
+                <h2>Litecoin</h2>
+                <i class="fa-solid fa-angle-down"></i>
+            </div>
+            <div class="all-coin-cards">
+                <div class="coin-card">
+                    <span id="litecoin-account-balance">$ 0.00</span>
+                    <p>account balance</p>
+                </div>
+                <div class="coin-card">
+                    <span id="litecoin-total-earning">$ 0.00</span>
+                    <p>Earned Total</p>
+                </div>
+                <div class="coin-card">
+                    <span id="litecoin-active-deposit">$0.00</span>
+                    <p>Active Deposit</p>
+                </div>
+                <div class="coin-card">
+                    <span id="litecoin-total-deposit">$0.00</span>
+                    <p>Total Deposit</p>
+                </div>
+                <div class="coin-card">
+                    <span id="litecoin-referral-bonus">$0.00</span>
+                    <p>Referal Bonus</p>
+                </div>
+            </div>
+        </div>
+
+     
+    </div>
+
+    <div class="referal">
+        <div class="referal-link">
+            <i class="fa-solid fa-user" id="referal-icon"></i>
+            <div class="your-rferral-link">
+                <p class="blue" id="referal-link">https://great-apminers.com/?ref=Santexeze</p>
+                <p>Your Referral Link :</p>
+            </div>
+        </div>
+        <button type="button" class=" copy-referal" id="copy-referal-link">Copy</button>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="footer-burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div>
+    <ul class="footer-links">
+        <li><a href="../index.html#About_us">About Us</a></li>
+        <!--<li><a href="../logined_pages/investment.html">Account</a></li>-->
+        <li><a href="">Make deposit</a></li>
+        <li><a href="../logined_pages/history.html">Transaction History</a></li>
+        <li><a href="../logined_pages/withdraw.html">Withdraw</a></li>
+        <li><a href="../logined_pages/edit_account.html">Edit Account</a></li>
+        <li><a href="../logined_pages/security.html">Security</a></li>
+        <li><a class="logout-link" href="#">Log Out</a></li>
+    </ul>
+</footer>
+
+<script src="../data.js"></script>
+<script src="../script.js"></script>
+
+
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/67809b88af5bfec1dbe98ba2/1ih75v3qr';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
+
+</body>
+</html>

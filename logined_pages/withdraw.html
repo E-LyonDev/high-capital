@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Irish+Grover&display=swap" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+        <script src="https://kit.fontawesome.com/d5a2a27062.js" crossorigin="anonymous"></script> 
+        <script src="https://cdn.socket.io/4.0.0/socket.io.min.js"></script>
+        <link rel="stylesheet" href="../style/invest.css">
+        <title>High capital</title>
+    </head>
+<body>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="investment.html">Account</a></li> 
+            <li><a href="../index.html#About_us">About Us</a></li>
+            <li><a href="../index.html#Testimonial">Testimonial</a></li>
+            <li><a class="logout-link" href="#">Log Out</a></li>
+            <li><a href="../index.html#contact_us">Contact Us</a></li>
+            <li><a href="../termsandconditions.html">Terms & conditions</a></li>
+    </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <h3 class="logo">High Capital</h3>
+</nav>
+
+<div class="all-body body">
+    <div class="header">
+        <div class="header-text">
+            <h2>Withdraw Request</h2>
+        </div>
+    </div>
+    <div class="withdraw-container">
+        <div class="select-currency">
+        <label for="transaction-currency">Select Currency:</label>
+        <select class="all-transaction" id="transaction-currency" title="transaction">
+            <option>Select Currency</option>
+            <option>Bitcoin</option>
+            <option>Ethereum</option>
+            <option>Litecoin</option>
+    </select>
+        </div>
+        <form class="withdraw-form">
+            <label for="withdraw-amount">Amount to Withdraw:</label>
+            <input type="number" id="withdraw-amount" name="withdraw-amount" placeholder="Enter amount" required>
+
+            <label for="withdraw-address">Address to Withdraw Into:</label>
+            <input type="text" id="withdraw-address" name="withdraw-address" placeholder="Enter address" required>
+
+            <label for="transaction-pin">Transaction PIN:</label>
+            <input type="password" id="transaction-pin" name="transaction-pin" placeholder="Enter transaction PIN" required>
+
+            <button type="submit">Submit Withdrawal Request</button>
+        </form>
+    </div>
+</div>
+<footer class="footer">
+    <div class="footer-burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div>
+    <ul class="footer-links">
+        <li><a href="investment.html">Account</a></li>
+        <li><a href="../index.html#About_us">About Us</a></li>
+        <li><a href="deposit.html">Make deposit</a></li>
+        <!--<li><a href="history.html">Transaction History</a></li>-->
+        <li><a href="withdraw.html">Withdraw</a></li>
+        <li><a href="edit_account.html">Edit Account</a></li>
+        <li><a href="security.html">Security</a></li>
+        <li><a class="logout-link" href="#">Log Out</a></li>
+    </ul>
+</footer>
+
+<script src="../script.js"></script>
+
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/67809b88af5bfec1dbe98ba2/1ih75v3qr';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
+
+</body>
+</html>
